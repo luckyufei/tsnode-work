@@ -1,0 +1,14 @@
+declare var PassThrough: any;
+declare var rules: any;
+declare var util: any;
+declare var pluginMgr: any;
+declare var fileMgr: any;
+declare var transproto: any;
+declare var getEncodeTransform: any;
+declare var getDecodeTransform: any;
+declare var getRawHeaderNames: any;
+declare var HTTP_RE: RegExp;
+declare var MAX_PAYLOAD_SIZE: number;
+declare function setupRules(req: any, next: any): void;
+declare function getDecoder(obj: any): (socket: any, callback: any) => void;
+declare function getEncoder(obj: any, req: any): (socket: any, callback: any) => void;

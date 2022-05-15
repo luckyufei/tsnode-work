@@ -1,0 +1,14 @@
+declare var path: any;
+declare var fs: any;
+declare var fse: any;
+declare var util: any;
+declare var pluginUtil: any;
+declare var mp: any;
+declare var config: any;
+declare var CUSTOM_PLUGIN_PATH: any;
+declare var customPluginPaths: any;
+declare var notUninstallPluginPaths: any;
+declare var projectPluginPaths: any;
+declare var accountPluginsPath: any;
+declare var paths: any;
+declare function readPluginModulesSync(dir: any, plugins: any): any;

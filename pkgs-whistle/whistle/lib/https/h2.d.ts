@@ -1,0 +1,34 @@
+declare var https: any;
+declare var LRU: any;
+declare var tls: any;
+declare var sockx: any;
+declare var PassThrough: any;
+declare var util: any;
+declare var config: any;
+declare var http2: any;
+declare var SUPPORTED_PROTOS: string[];
+declare var H2_SETTINGS: {
+    enablePush: boolean;
+};
+declare var H2_SVR_SETTINGS: {
+    enablePush: boolean;
+    enableConnectProtocol: boolean;
+};
+declare var CACHE_TIMEOUT: number;
+declare var INTERVAL: number;
+declare var clients: {};
+declare var notH2: any;
+declare var pendingH2: {};
+declare var pendingList: {};
+declare var TIMEOUT: number;
+declare var REQ_TIMEOUT: number;
+declare var CONCURRENT: number;
+declare function getSocksSocket(options: any, callback: any): void;
+declare function getTunnelSocket(options: any, callback: any): void;
+declare function addCert(opts: any, options: any): any;
+declare function getProxySocket(options: any, callback: any, ciphers: any, isHttp: any): void;
+declare function getSocket(options: any, callback: any, isHttp: any): void;
+declare function getClient(req: any, socket: any, name: any, callback: any): any;
+declare function requestH2(client: any, req: any, res: any, callback: any): void;
+declare function bindListner(server: any, listener: any): any;
+declare function checkTlsError(err: any): boolean;

@@ -1,0 +1,10 @@
+declare var fs: any;
+declare var path: any;
+declare var Transform: any;
+declare var util: any;
+declare var config: any;
+declare var logScriptFile: any;
+declare var logScript: any;
+declare var logHtmlScript: string;
+declare var LOG_ID_RE: RegExp;
+declare function wrapScript(script: any, isHtml: any): string;

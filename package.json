@@ -1,0 +1,60 @@
+{
+  "name": "@luckyufei/tsnode-work",
+  "scripts": {
+    "setup": "lerna link --force-local && lerna bootstrap --force-local",
+    "dev": "lerna run dev",
+    "build": "lerna run --parallel build",
+    "whistle:build": "lerna run --scope={@luckyufei/whistle} build",
+    "whistle:start": "lerna run --scope @luckyufei/whistle start",
+    "pretify": "prettier --write ."
+  },
+  "workspaces": [
+    "pkgs-egg/*",
+    "pkgs-pm2/*",
+    "pkgs-whistle/*"
+  ],
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "lerna": "3.22.1",
+    "prettier": "^2.0.5",
+    "tsconfig-paths": "3.9.0",
+    "typescript": "^4.6.0",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint": "^7.28.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.4.2",
+    "@typescript/analyze-trace": "^0.9.0",
+    "@commitlint/cli": "12.0.1",
+    "@commitlint/config-conventional": "12.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:luckyufei/tsnode-work.git"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,ts}": []
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "header-max-length": [
+        1,
+        "always",
+        72
+      ]
+    }
+  }
+}

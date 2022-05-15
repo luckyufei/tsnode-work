@@ -1,0 +1,14 @@
+declare var handleWebsocket: any;
+declare var hparser: any;
+declare var net: any;
+declare var Buffer: any;
+declare var pluginMgr: any;
+declare var util: any;
+declare var config: any;
+declare var formatHeaders: any;
+declare var getRawHeaderNames: any;
+declare var getRawHeaders: any;
+declare var WS_RE: RegExp;
+declare var PLUGIN_PATH_RE: RegExp;
+declare function getPluginNameByReq(req: any, callback: any): any;
+declare function upgradeHandler(req: any, socket: any): void;

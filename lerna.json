@@ -1,0 +1,11 @@
+{
+  "packages": ["pkgs-egg/*", "pkgs-pm2/*", "pkgs-whistle/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "version": {
+      "message": "chore: Release"
+    }
+  }
+}

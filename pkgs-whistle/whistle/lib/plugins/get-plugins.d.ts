@@ -1,0 +1,14 @@
+declare var path: any;
+declare var fs: any;
+declare var util: any;
+declare var mp: any;
+declare var config: any;
+declare var CUSTOM_PLUGIN_PATH: any;
+declare var customPluginPaths: any;
+declare var notUninstallPluginPaths: any;
+declare var projectPluginPaths: any;
+declare var accountPluginsPath: any;
+declare function readDir(dir: any, callback: any): void;
+declare function statFile(filepath: any, callback: any): void;
+declare function readPluginRootList(dir: any, callback: any): void;
+declare function readPluginModules(dir: any, callback: any, plugins: any, isCustom: any): void;

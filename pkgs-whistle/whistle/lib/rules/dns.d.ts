@@ -1,0 +1,18 @@
+declare var dns: any;
+declare var net: any;
+declare var request: any;
+declare var config: any;
+declare var dnsCacheTime: number;
+declare var dnsServer: any;
+declare var dnsOverHttps: any;
+declare var resolve6: any;
+declare var dnsOptional: any;
+declare var dnsCache: {};
+declare var callbacks: {};
+declare var TIMEOUT: number;
+declare var CACHE_TIME: number;
+declare var MAX_CACHE_TIME: number;
+declare function getIpFromAnswer(data: any): any;
+declare function lookDnsOverHttps(hostname: any, callback: any): void;
+declare function lookupDNS(hostname: any, callback: any): any;
+declare function getDefaultIp(type: any): "127.0.0.1" | "0:0:0:0:0:0:0:1";
